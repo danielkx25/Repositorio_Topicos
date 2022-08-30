@@ -1,0 +1,91 @@
+{
+	"info": {
+		"_postman_id": "c6c5ff03-04f2-4291-a548-5bf472ac14c0",
+		"name": "RelogioPonto",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23002379"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/registros",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"datahoraInicial\": \"2022-08-30 06:08:43\",\r\n    \"datahoraFinal\": \"2022-09-01 07:08:44\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/registros",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"registros"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/registros/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/registros/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"registros",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/registros/calculoHoras/2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/registros/calculoHoras/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"registros",
+						"calculoHoras",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
